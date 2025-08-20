@@ -26,6 +26,102 @@ p {
     margin: 0 auto 20px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+
+
+
+
+
+
+
+    
+
+/* Estilos generales del nav */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #f00; /* color al pasar el mouse */
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* 🔹 Versión móvil */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* aparece el botón hamburguesa */
+  }
+
+  .nav-list {
+    display: none; /* oculto el menú por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* debajo del nav */
+    right: 0;
+    background: #111;
+    width: 200px;
+    padding: 15px;
+    border-radius: 0 0 0 12px;
+  }
+
+  .nav-list.active {
+    display: flex; /* cuando se abre */
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+}
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+    
 }
 
 .menu-toggle {
@@ -787,6 +883,7 @@ body {
 
 
 /* fin de estilo para boton de medidas
+
 
 
 
