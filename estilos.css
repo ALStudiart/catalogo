@@ -16,84 +16,39 @@ p {
 }
 
 /* HEADER Y NAVBAR */
-
-
-
-
-
-
-
-/* Estilos generales del nav */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111;
-  padding: 10px 20px;
-  position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(204, 203, 203);
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+.nav-list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* ajusta según la altura de tu nav */
+  right: 0;
+  background: #111; /* o el color de tu navbar */
+  width: 200px;
+  padding: 1rem;
   z-index: 1000;
 }
 
-.nav-list {
+/* Cuando el JS agrega .active, se muestra */
+.nav-list.active {
   display: flex;
-  gap: 20px;
-  list-style: none;
 }
 
-.nav-list li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: color 0.3s;
-}
 
-.nav-list li a:hover {
-  color: #f00; /* color al pasar el mouse */
-}
 
-/* Botón hamburguesa */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  z-index: 1100;
-}
 
-.menu-toggle .bar {
-  height: 3px;
-  width: 25px;
-  background: white;
-  margin: 4px 0;
-  transition: 0.3s;
-}
-
-/* 🔹 Versión móvil con panel lateral */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: flex; /* aparece el botón hamburguesa */
-  }
-
-  .nav-list {
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: -250px; /* oculto a la derecha */
-    height: 100%;
-    width: 250px;
-    background: #111;
-    padding: 60px 20px;
-    transition: right 0.3s ease-in-out;
-    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.5);
-  }
-
-  .nav-list.active {
-    right: 0; /* se desliza desde la derecha */
-  }
-
-  .nav-list li {
-    margin: 20px 0;
-  }
-}
 
 
 
@@ -869,6 +824,7 @@ body {
 
 
 /* fin de estilo para boton de medidas
+
 
 
 
