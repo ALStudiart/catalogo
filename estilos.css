@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #d6d6d6;
+     background-color: #d6d6d6;
     font-family: 'Poppins', sans-serif;
     color: #111;
 }
@@ -28,43 +28,6 @@ p {
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-
-.nav-list {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 60px; /* ajusta según la altura de tu nav */
-  right: 0;
-  background: #111; /* o el color de tu navbar */
-  width: 200px;
-  padding: 1rem;
-  z-index: 1000;
-}
-
-/* Cuando el JS agrega .active, se muestra */
-.nav-list.active {
-  display: flex;
-}
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-
-
-
-
-    
-}
-
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -76,7 +39,7 @@ p {
 
 .menu-toggle .bar {
     height: 3px;
-    background-color: #fcf8f8;
+    background-color: #111;
     border-radius: 2px;
 }
 
@@ -91,7 +54,7 @@ p {
 
 .nav-list li a {
     text-decoration: none;
-    color: #000000;
+    color: #111;
     font-weight: 600;
     font-size: 1.1rem;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -169,6 +132,7 @@ p {
     margin-top: 300px;
   }
 }
+
 /* GRID DE CATEGORIAS */
 .grid-container {
     display: grid;
@@ -301,7 +265,7 @@ p {
 
 .precio-producto {
   font-size: 1.6rem;
-  color: #000000;
+  color: #bfa57a;
   margin-bottom: 20px;
   font-weight: 700;
   text-align: left;
@@ -531,7 +495,6 @@ table.tallas th {
 .nav:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
-
 
 .nav-next {
   right: 10px;
@@ -822,8 +785,10 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-
 /* fin de estilo para boton de medidas
+
+
+
 
 
 
