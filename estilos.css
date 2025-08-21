@@ -790,33 +790,6 @@ body {
 
 
 
-.talle-selector {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  gap: 10px; /* Espacio entre los elementos */
-  padding: 10px; /* Espaciado interno */
-}
-
-.talle {
-  background-color: #f1f1f1;
-  border: 1px solid #ddd;
-  padding: 10px;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5px;
-  min-width: 90px; /* Ajusta el tamaño mínimo de cada elemento */
-  box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño */
-}
-
-@media (max-width: 600px) {
-  .talle {
-    font-size: 14px; /* Reducir el tamaño de la fuente en pantallas más pequeñas */
-    min-width: 70px; /* Reducir el tamaño mínimo de cada elemento */
-  }
-}
-
 
 
 
