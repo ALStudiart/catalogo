@@ -790,5 +790,14 @@ body {
 
 
 
+.talle-selector {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 10px; /* Espacio entre los elementos */
+  padding: 10px; /* Espaciado interno */
+}
+
+
 
 
